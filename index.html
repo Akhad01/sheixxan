@@ -531,7 +531,7 @@
 
             </div>
         </section>
-        <audio autoplay loop>
+        <audio autoplay loop id="my_audio">
             <source src="media/0wpa8ee97ordzwk55febwrdv2b1lrxgp.mp3" type="audio/mpeg">
         </audio>
 
@@ -1193,6 +1193,10 @@
         video.addEventListener("pause", function () {
             circlePlayButton.style.opacity = 1;
         });
+
+        //
+        var my_audio = document.getElementById("my_audio");
+        my_audio.play()
         // 
         document.addEventListener('touchstart', function () {
             console.log("hh")
